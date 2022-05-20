@@ -46,6 +46,7 @@ namespace Sistema
 
         private void Producto_Load(object sender, EventArgs e)
         {
+            //hola
             llenar_tabla();
         }
     }
