@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tecnico.Designer.cs">
+      <DependentUpon>Tecnico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Producto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tecnico.resx">
+      <DependentUpon>Tecnico.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
