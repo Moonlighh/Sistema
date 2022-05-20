@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Sistema
 {
-    public partial class Form1 : Form
+    public partial class Producto : Form
     {
-        public Form1()
+        public Producto()
         {
             InitializeComponent();
-        }
-
-        private void mantenedorProductoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Producto pro = new Producto();
-            pro.ShowDialog();
         }
     }
 }
