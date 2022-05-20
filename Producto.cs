@@ -28,7 +28,7 @@ namespace Sistema
         public void llenar_tabla()
         {
 
-            string consulta = "select * from Cliente";
+            string consulta = "select * from Producto";
             SqlDataAdapter adatador = new SqlDataAdapter(consulta, con);
             DataTable dt = new DataTable();
             adatador.Fill(dt);
