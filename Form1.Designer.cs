@@ -41,6 +41,8 @@
             this.mantenedorTecnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.piezasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manteneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,11 +55,12 @@
             this.vendedorToolStripMenuItem,
             this.almacenToolStripMenuItem,
             this.tecnicoToolStripMenuItem,
-            this.citasToolStripMenuItem});
+            this.citasToolStripMenuItem,
+            this.piezasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1083, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(812, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,13 +69,13 @@
             this.mantenedorClienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorProductoToolStripMenuItem});
             this.mantenedorClienteToolStripMenuItem.Name = "mantenedorClienteToolStripMenuItem";
-            this.mantenedorClienteToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.mantenedorClienteToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.mantenedorClienteToolStripMenuItem.Text = "Producto";
             // 
             // mantenedorProductoToolStripMenuItem
             // 
             this.mantenedorProductoToolStripMenuItem.Name = "mantenedorProductoToolStripMenuItem";
-            this.mantenedorProductoToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.mantenedorProductoToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.mantenedorProductoToolStripMenuItem.Text = "Mantenedor Producto";
             this.mantenedorProductoToolStripMenuItem.Click += new System.EventHandler(this.mantenedorProductoToolStripMenuItem_Click);
             // 
@@ -81,13 +84,13 @@
             this.mantenedorClienteToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorClienteToolStripMenuItem2});
             this.mantenedorClienteToolStripMenuItem1.Name = "mantenedorClienteToolStripMenuItem1";
-            this.mantenedorClienteToolStripMenuItem1.Size = new System.Drawing.Size(69, 24);
+            this.mantenedorClienteToolStripMenuItem1.Size = new System.Drawing.Size(56, 20);
             this.mantenedorClienteToolStripMenuItem1.Text = "Cliente";
             // 
             // mantenedorClienteToolStripMenuItem2
             // 
             this.mantenedorClienteToolStripMenuItem2.Name = "mantenedorClienteToolStripMenuItem2";
-            this.mantenedorClienteToolStripMenuItem2.Size = new System.Drawing.Size(223, 26);
+            this.mantenedorClienteToolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
             this.mantenedorClienteToolStripMenuItem2.Text = "Mantenedor Cliente";
             // 
             // vendedorToolStripMenuItem
@@ -95,13 +98,13 @@
             this.vendedorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorVendedorToolStripMenuItem});
             this.vendedorToolStripMenuItem.Name = "vendedorToolStripMenuItem";
-            this.vendedorToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.vendedorToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.vendedorToolStripMenuItem.Text = "Vendedor";
             // 
             // mantenedorVendedorToolStripMenuItem
             // 
             this.mantenedorVendedorToolStripMenuItem.Name = "mantenedorVendedorToolStripMenuItem";
-            this.mantenedorVendedorToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.mantenedorVendedorToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.mantenedorVendedorToolStripMenuItem.Text = "Mantenedor Vendedor";
             // 
             // almacenToolStripMenuItem
@@ -109,13 +112,13 @@
             this.almacenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorAlmacenToolStripMenuItem});
             this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
-            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.almacenToolStripMenuItem.Text = "Almacen";
             // 
             // mantenedorAlmacenToolStripMenuItem
             // 
             this.mantenedorAlmacenToolStripMenuItem.Name = "mantenedorAlmacenToolStripMenuItem";
-            this.mantenedorAlmacenToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.mantenedorAlmacenToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.mantenedorAlmacenToolStripMenuItem.Text = "Mantenedor Almacen";
             // 
             // tecnicoToolStripMenuItem
@@ -123,13 +126,13 @@
             this.tecnicoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorTecnicoToolStripMenuItem});
             this.tecnicoToolStripMenuItem.Name = "tecnicoToolStripMenuItem";
-            this.tecnicoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.tecnicoToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.tecnicoToolStripMenuItem.Text = "Tecnico";
             // 
             // mantenedorTecnicoToolStripMenuItem
             // 
             this.mantenedorTecnicoToolStripMenuItem.Name = "mantenedorTecnicoToolStripMenuItem";
-            this.mantenedorTecnicoToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.mantenedorTecnicoToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.mantenedorTecnicoToolStripMenuItem.Text = "Mantenedor Tecnico";
             this.mantenedorTecnicoToolStripMenuItem.Click += new System.EventHandler(this.mantenedorTecnicoToolStripMenuItem_Click);
             // 
@@ -138,22 +141,37 @@
             this.citasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenedorCitasToolStripMenuItem});
             this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            this.citasToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.citasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.citasToolStripMenuItem.Text = "Citas";
             // 
             // mantenedorCitasToolStripMenuItem
             // 
             this.mantenedorCitasToolStripMenuItem.Name = "mantenedorCitasToolStripMenuItem";
-            this.mantenedorCitasToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
+            this.mantenedorCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mantenedorCitasToolStripMenuItem.Text = "Mantenedor Citas";
+            // 
+            // piezasToolStripMenuItem
+            // 
+            this.piezasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manteneToolStripMenuItem});
+            this.piezasToolStripMenuItem.Name = "piezasToolStripMenuItem";
+            this.piezasToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.piezasToolStripMenuItem.Text = "Piezas";
+            // 
+            // manteneToolStripMenuItem
+            // 
+            this.manteneToolStripMenuItem.Name = "manteneToolStripMenuItem";
+            this.manteneToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.manteneToolStripMenuItem.Text = "Mantenedor de Piezas";
+            this.manteneToolStripMenuItem.Click += new System.EventHandler(this.manteneToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 626);
+            this.ClientSize = new System.Drawing.Size(812, 509);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Mantenimiento";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -179,6 +197,8 @@
         private System.Windows.Forms.ToolStripMenuItem mantenedorTecnicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorCitasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem piezasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manteneToolStripMenuItem;
     }
 }
 

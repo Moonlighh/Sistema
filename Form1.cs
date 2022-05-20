@@ -33,5 +33,11 @@ namespace Sistema
             Tecnico tec = new Tecnico();
             tec.ShowDialog();
         }
+
+        private void manteneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Piezas pie = new Piezas();
+            pie.ShowDialog();
+        }
     }
 }
