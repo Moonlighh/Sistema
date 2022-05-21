@@ -32,7 +32,6 @@ namespace Sistema
             this.txtfabri = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtcod = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace Sistema
             this.dgvPiezas = new System.Windows.Forms.DataGridView();
             this.txtCosto = new System.Windows.Forms.TextBox();
             this.txtcop = new System.Windows.Forms.TextBox();
+            this.txtxcod = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPiezas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,14 +68,6 @@ namespace Sistema
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(167, 20);
             this.txtnombre.TabIndex = 19;
-            // 
-            // txtcod
-            // 
-            this.txtcod.Enabled = false;
-            this.txtcod.Location = new System.Drawing.Point(115, 22);
-            this.txtcod.Name = "txtcod";
-            this.txtcod.Size = new System.Drawing.Size(100, 20);
-            this.txtcod.TabIndex = 20;
             // 
             // label6
             // 
@@ -130,6 +122,7 @@ namespace Sistema
             this.button5.TabIndex = 9;
             this.button5.Text = "Eliminar";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -139,6 +132,7 @@ namespace Sistema
             this.button4.TabIndex = 10;
             this.button4.Text = "Editar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -168,6 +162,7 @@ namespace Sistema
             this.dgvPiezas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPiezas.Size = new System.Drawing.Size(537, 150);
             this.dgvPiezas.TabIndex = 7;
+            this.dgvPiezas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPiezas_CellDoubleClick);
             // 
             // txtCosto
             // 
@@ -183,17 +178,24 @@ namespace Sistema
             this.txtcop.Size = new System.Drawing.Size(100, 20);
             this.txtcop.TabIndex = 23;
             // 
+            // txtxcod
+            // 
+            this.txtxcod.Location = new System.Drawing.Point(115, 22);
+            this.txtxcod.Name = "txtxcod";
+            this.txtxcod.Size = new System.Drawing.Size(100, 20);
+            this.txtxcod.TabIndex = 24;
+            // 
             // Piezas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtxcod);
             this.Controls.Add(this.txtcop);
             this.Controls.Add(this.txtCosto);
             this.Controls.Add(this.txtfabri);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.txtnombre);
-            this.Controls.Add(this.txtcod);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -218,7 +220,6 @@ namespace Sistema
         private System.Windows.Forms.TextBox txtfabri;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.TextBox txtnombre;
-        private System.Windows.Forms.TextBox txtcod;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -231,5 +232,6 @@ namespace Sistema
         private System.Windows.Forms.DataGridView dgvPiezas;
         private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.TextBox txtcop;
+        private System.Windows.Forms.TextBox txtxcod;
     }
 }
