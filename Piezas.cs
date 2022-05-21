@@ -75,7 +75,7 @@ namespace Sistema
 
         private void dgvPiezas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           // txtdni.Text = dataGridView1.SelectedCells[0].Value.ToString();
+           txtxcod.Text = dgvPiezas.SelectedCells[0].Value.ToString();
             txtnombre.Text = dgvPiezas.SelectedCells[1].Value.ToString();
             txtCosto.Text = dgvPiezas.SelectedCells[2].Value.ToString();
             txtStock.Text = dgvPiezas.SelectedCells[3].Value.ToString();
@@ -85,7 +85,7 @@ namespace Sistema
         private void button4_Click(object sender, EventArgs e)
         {
             con.Open();
-            string consulta = "update cliente set DNI=" + txtxcod.Text + ",nombre='" + txtnombre.Text + "',sexo='" + txtCosto.Text + "',edad='" + txtStock.Text + "',telefono='" + txtfabri.Text + "' where DNI=" + txtxcod.Text + "";
+            string consulta = "update Piezas set IdPieza=" + txtxcod.Text + ",nombre='" + txtnombre.Text + "',coste='" + txtCosto.Text + "',stok='" + txtStock.Text + "',fabrica='" + txtfabri.Text + "' where IdPieza=" + txtxcod.Text + "";
             SqlCommand comando = new SqlCommand(consulta, con);
 
             comando.ExecuteNonQuery();
@@ -96,7 +96,7 @@ namespace Sistema
         private void button5_Click(object sender, EventArgs e)
         {
             con.Open();
-            string consulta = "delete from cliente where DNI=" + txtxcod.Text + "";
+            string consulta = "delete from Piezas where IdPieza=" + txtxcod.Text + "";
             SqlCommand comando = new SqlCommand(consulta, con);
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Eliminado");
