@@ -35,6 +35,8 @@ namespace Sistema
             txtCorreo.Text = "";
             txtTelefono.Text = "";
         }
+
+
         private void Cliente_Load(object sender, EventArgs e)
         {
             llenar_tabla();
