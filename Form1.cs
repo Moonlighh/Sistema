@@ -31,6 +31,8 @@ namespace Sistema
         private void mantenedorTecnicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Tecnico tec = new Tecnico();
+            tec.llenar_tabla();
+
             tec.ShowDialog();
         }
 
