@@ -90,8 +90,9 @@
             // mantenedorClienteToolStripMenuItem2
             // 
             this.mantenedorClienteToolStripMenuItem2.Name = "mantenedorClienteToolStripMenuItem2";
-            this.mantenedorClienteToolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
+            this.mantenedorClienteToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.mantenedorClienteToolStripMenuItem2.Text = "Mantenedor Cliente";
+            this.mantenedorClienteToolStripMenuItem2.Click += new System.EventHandler(this.mantenedorClienteToolStripMenuItem2_Click);
             // 
             // vendedorToolStripMenuItem
             // 
@@ -147,7 +148,7 @@
             // mantenedorCitasToolStripMenuItem
             // 
             this.mantenedorCitasToolStripMenuItem.Name = "mantenedorCitasToolStripMenuItem";
-            this.mantenedorCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mantenedorCitasToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.mantenedorCitasToolStripMenuItem.Text = "Mantenedor Citas";
             // 
             // piezasToolStripMenuItem
@@ -171,7 +172,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 509);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Mantenimiento";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -41,5 +41,11 @@ namespace Sistema
             Piezas pie = new Piezas();
             pie.ShowDialog();
         }
+
+        private void mantenedorClienteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Cliente pro = new Cliente();
+            pro.ShowDialog();
+        }
     }
 }
