@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.mantenedorClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorClienteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,26 +43,9 @@
             this.mantenedorCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.piezasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manteneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenedorClienteToolStripMenuItem,
-            this.mantenedorClienteToolStripMenuItem1,
-            this.vendedorToolStripMenuItem,
-            this.almacenToolStripMenuItem,
-            this.tecnicoToolStripMenuItem,
-            this.citasToolStripMenuItem,
-            this.piezasToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(812, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // mantenedorClienteToolStripMenuItem
             // 
@@ -74,6 +57,7 @@
             // 
             // mantenedorProductoToolStripMenuItem
             // 
+            this.mantenedorProductoToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.mantenedorProductoToolStripMenuItem.Name = "mantenedorProductoToolStripMenuItem";
             this.mantenedorProductoToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.mantenedorProductoToolStripMenuItem.Text = "Mantenedor Producto";
@@ -90,7 +74,7 @@
             // mantenedorClienteToolStripMenuItem2
             // 
             this.mantenedorClienteToolStripMenuItem2.Name = "mantenedorClienteToolStripMenuItem2";
-            this.mantenedorClienteToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.mantenedorClienteToolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
             this.mantenedorClienteToolStripMenuItem2.Text = "Mantenedor Cliente";
             this.mantenedorClienteToolStripMenuItem2.Click += new System.EventHandler(this.mantenedorClienteToolStripMenuItem2_Click);
             // 
@@ -166,12 +150,31 @@
             this.manteneToolStripMenuItem.Text = "Mantenedor de Piezas";
             this.manteneToolStripMenuItem.Click += new System.EventHandler(this.manteneToolStripMenuItem_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mantenedorClienteToolStripMenuItem,
+            this.mantenedorClienteToolStripMenuItem1,
+            this.vendedorToolStripMenuItem,
+            this.almacenToolStripMenuItem,
+            this.tecnicoToolStripMenuItem,
+            this.citasToolStripMenuItem,
+            this.piezasToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(558, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 509);
+            this.ClientSize = new System.Drawing.Size(558, 248);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Mantenimiento";
@@ -185,7 +188,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mantenedorClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorClienteToolStripMenuItem1;
@@ -200,6 +202,7 @@
         private System.Windows.Forms.ToolStripMenuItem mantenedorCitasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem piezasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manteneToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 

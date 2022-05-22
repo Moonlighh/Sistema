@@ -119,5 +119,8 @@
   <ItemGroup>
     <None Include="Resources\botón-redondo-verde-suave-especial-del-cliente-icono-miembro-105853724.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo_Space_Gif.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

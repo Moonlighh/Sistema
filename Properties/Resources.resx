@@ -121,4 +121,7 @@
   <data name="botón-redondo-verde-suave-especial-del-cliente-icono-miembro-105853724" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botón-redondo-verde-suave-especial-del-cliente-icono-miembro-105853724.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fondo_Space_Gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo_Space_Gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
