@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 //
-// Edson Antonio Contreras Perez 
+// Creado: Edson Antonio Contreras Perez 
 //
 namespace Sistema
 {
@@ -19,16 +19,11 @@ namespace Sistema
         {
             InitializeComponent();
         }
-      
-        static string servidor = "localhost";
-        static string bd = "ServicioTecnico";
-        static string usuario = "sa";
-        static string contraseña = "edson123147";
-        static string puerto = "1433";
 
 
+        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
 
-        SqlConnection con = new SqlConnection("Data Source = " + servidor + ", " + puerto + ";" + "user id = " + usuario + ";" + "password=" + contraseña + ";" + "Initial Catalog = " + bd + ";" + "Persist Security Info=true");
+
         private void Tecnico_Load(object sender, EventArgs e)
         {
 
