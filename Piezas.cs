@@ -16,36 +16,10 @@ namespace Sistema
         {
             InitializeComponent();
         }
-
-        string nombrecompleto = "";
-        string registro = "";
-
-        public string generarRegistro(string nombre)
-        {
-            string[] nombreseparado = nombre.Split(' ').ToArray();
-            registro = "";
-            for (int i = 0; i < nombreseparado.Length; i++)
-            {
-                registro += nombreseparado[i].Substring(0, 1).ToUpper();
-            }
-            registro = registro + " - ";
-            Random codigo = new Random();
-            int valor = codigo.Next(1, 2000);
-            registro += valor.ToString();
-            return registro;
-        }
+        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
 
 
 
-        static string servidor = "localhost";
-        static string bd = "ServicioTecnico";
-        static string usuario = "Mantenimiento";
-        static string contraseña = "1234";
-        static string puerto = "1433";
-
-
-        // string cadenaConexion = "Data Source=" + servidor + "," + puerto + ";" + "user id=" + usuario + ";" + "password=" + contraseña + ";" + "Initial Catalog=" + bd + ";" + "Persist Security Info=true";
-        SqlConnection con = new SqlConnection("Data Source = " + servidor + ", " + puerto + ";" + "user id = " + usuario + ";" + "password=" + contraseña + ";" + "Initial Catalog = " + bd + ";" + "Persist Security Info=true");
         public void llenar_tabla()
         {
 
@@ -103,6 +77,11 @@ namespace Sistema
             llenar_tabla();
 
             con.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

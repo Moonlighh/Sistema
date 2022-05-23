@@ -43,28 +43,29 @@ namespace Sistema
             this.button2 = new System.Windows.Forms.Button();
             this.dgvPiezas = new System.Windows.Forms.DataGridView();
             this.txtCosto = new System.Windows.Forms.TextBox();
-            this.txtcop = new System.Windows.Forms.TextBox();
             this.txtxcod = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPiezas)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtfabri
             // 
-            this.txtfabri.Location = new System.Drawing.Point(115, 173);
+            this.txtfabri.Location = new System.Drawing.Point(94, 193);
             this.txtfabri.Name = "txtfabri";
             this.txtfabri.Size = new System.Drawing.Size(135, 20);
             this.txtfabri.TabIndex = 17;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(115, 133);
+            this.txtStock.Location = new System.Drawing.Point(94, 153);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(81, 20);
             this.txtStock.TabIndex = 18;
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(115, 56);
+            this.txtnombre.Location = new System.Drawing.Point(94, 76);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(167, 20);
             this.txtnombre.TabIndex = 19;
@@ -72,7 +73,7 @@ namespace Sistema
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 133);
+            this.label6.Location = new System.Drawing.Point(6, 153);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 12;
@@ -81,7 +82,7 @@ namespace Sistema
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 173);
+            this.label4.Location = new System.Drawing.Point(6, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 13;
@@ -90,7 +91,7 @@ namespace Sistema
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 99);
+            this.label3.Location = new System.Drawing.Point(6, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 14;
@@ -99,7 +100,7 @@ namespace Sistema
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 29);
+            this.label5.Location = new System.Drawing.Point(6, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 15;
@@ -108,7 +109,7 @@ namespace Sistema
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 59);
+            this.label1.Location = new System.Drawing.Point(6, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 16;
@@ -116,7 +117,7 @@ namespace Sistema
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(634, 210);
+            this.button5.Location = new System.Drawing.Point(477, 153);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 9;
@@ -126,7 +127,7 @@ namespace Sistema
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(634, 152);
+            this.button4.Location = new System.Drawing.Point(477, 95);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 10;
@@ -136,7 +137,7 @@ namespace Sistema
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(634, 88);
+            this.button3.Location = new System.Drawing.Point(477, 31);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 11;
@@ -146,17 +147,18 @@ namespace Sistema
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(634, 258);
+            this.button2.Location = new System.Drawing.Point(477, 201);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Cargar";
+            this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dgvPiezas
             // 
             this.dgvPiezas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPiezas.Location = new System.Drawing.Point(30, 223);
+            this.dgvPiezas.Location = new System.Drawing.Point(30, 288);
             this.dgvPiezas.Name = "dgvPiezas";
             this.dgvPiezas.ReadOnly = true;
             this.dgvPiezas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -166,41 +168,44 @@ namespace Sistema
             // 
             // txtCosto
             // 
-            this.txtCosto.Location = new System.Drawing.Point(115, 92);
+            this.txtCosto.Location = new System.Drawing.Point(94, 112);
             this.txtCosto.Name = "txtCosto";
             this.txtCosto.Size = new System.Drawing.Size(100, 20);
             this.txtCosto.TabIndex = 22;
             // 
-            // txtcop
-            // 
-            this.txtcop.Location = new System.Drawing.Point(376, 40);
-            this.txtcop.Name = "txtcop";
-            this.txtcop.Size = new System.Drawing.Size(100, 20);
-            this.txtcop.TabIndex = 23;
-            // 
             // txtxcod
             // 
-            this.txtxcod.Location = new System.Drawing.Point(115, 22);
+            this.txtxcod.Location = new System.Drawing.Point(94, 42);
             this.txtxcod.Name = "txtxcod";
             this.txtxcod.Size = new System.Drawing.Size(100, 20);
             this.txtxcod.TabIndex = 24;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtxcod);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtCosto);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtfabri);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtStock);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtnombre);
+            this.groupBox1.Location = new System.Drawing.Point(30, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(336, 238);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Registro Piezas";
             // 
             // Piezas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtxcod);
-            this.Controls.Add(this.txtcop);
-            this.Controls.Add(this.txtCosto);
-            this.Controls.Add(this.txtfabri);
-            this.Controls.Add(this.txtStock);
-            this.Controls.Add(this.txtnombre);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Aqua;
+            this.ClientSize = new System.Drawing.Size(632, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -210,8 +215,9 @@ namespace Sistema
             this.Text = "Piezas";
             this.Load += new System.EventHandler(this.Piezas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPiezas)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -231,7 +237,7 @@ namespace Sistema
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgvPiezas;
         private System.Windows.Forms.TextBox txtCosto;
-        private System.Windows.Forms.TextBox txtcop;
         private System.Windows.Forms.TextBox txtxcod;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
