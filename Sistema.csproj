@@ -140,5 +140,8 @@
   <ItemGroup>
     <None Include="Resources\Fondo_Space_Gif.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-usuario.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

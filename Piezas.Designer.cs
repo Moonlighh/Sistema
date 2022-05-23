@@ -131,17 +131,19 @@ namespace Sistema
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 10;
-            this.button4.Text = "Editar";
+            this.button4.Text = "Modificar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
+            this.button3.Image = global::Sistema.Properties.Resources.agregar_usuario;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(477, 31);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(90, 43);
             this.button3.TabIndex = 11;
-            this.button3.Text = "Agregar";
+            this.button3.Text = "    Agregar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

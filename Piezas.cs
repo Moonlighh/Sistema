@@ -29,6 +29,14 @@ namespace Sistema
             adatador.Fill(dt);
             dgvPiezas.DataSource = dt;
         }
+        public void limpiarEntradas()
+        {
+            txtxcod.Text = "";
+            txtnombre.Text = "";
+            txtCosto.Text = "";
+            txtStock.Text = "";
+            txtfabri.Text = "";
+        }
         private void Piezas_Load(object sender, EventArgs e)
         {
             llenar_tabla();
@@ -45,6 +53,8 @@ namespace Sistema
             llenar_tabla();
          
             con.Close();
+
+            limpiarEntradas();
         }
 
         private void dgvPiezas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -54,6 +64,7 @@ namespace Sistema
             txtCosto.Text = dgvPiezas.SelectedCells[2].Value.ToString();
             txtStock.Text = dgvPiezas.SelectedCells[3].Value.ToString();
             txtfabri.Text = dgvPiezas.SelectedCells[4].Value.ToString();
+            txtxcod.Enabled = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -65,6 +76,9 @@ namespace Sistema
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Modificado");
             llenar_tabla();
+            txtxcod.Enabled = false;
+            con.Close();
+            limpiarEntradas();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -77,6 +91,8 @@ namespace Sistema
             llenar_tabla();
 
             con.Close();
+            limpiarEntradas();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
