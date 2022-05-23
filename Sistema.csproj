@@ -143,5 +143,17 @@
   <ItemGroup>
     <None Include="Resources\agregar-usuario.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compartimiento %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
