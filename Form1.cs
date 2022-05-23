@@ -39,7 +39,7 @@ namespace Sistema
         private void manteneToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Piezas pie = new Piezas();
-            pie.ShowDialog();
+            pie.Show();
         }
 
         private void mantenedorClienteToolStripMenuItem2_Click(object sender, EventArgs e)

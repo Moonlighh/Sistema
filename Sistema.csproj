@@ -155,5 +155,8 @@
   <ItemGroup>
     <None Include="Resources\salida.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo_Space_Gif %285%29.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

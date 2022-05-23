@@ -76,7 +76,7 @@ namespace Sistema
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Modificado");
             llenar_tabla();
-            txtxcod.Enabled = false;
+            txtxcod.Enabled = true;
             con.Close();
             limpiarEntradas();
         }

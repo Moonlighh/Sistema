@@ -29,6 +29,7 @@ namespace Sistema
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Piezas));
             this.txtfabri = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
@@ -238,6 +239,7 @@ namespace Sistema
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvPiezas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Piezas";
             this.Text = "Piezas";
             this.Load += new System.EventHandler(this.Piezas_Load);
