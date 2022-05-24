@@ -36,6 +36,7 @@ namespace Sistema
             txtCosto.Text = "";
             txtStock.Text = "";
             txtfabri.Text = "";
+            txtxcod.Enabled = true;
         }
         private void Piezas_Load(object sender, EventArgs e)
         {

@@ -53,9 +53,10 @@ namespace Sistema
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Sistema.Properties.Resources.botón_redondo_verde_suave_especial_del_cliente_icono_miembro_105853724;
-            this.pictureBox1.Location = new System.Drawing.Point(498, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(664, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 54);
+            this.pictureBox1.Size = new System.Drawing.Size(95, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
@@ -66,9 +67,10 @@ namespace Sistema
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(12, 9);
+            this.label6.Location = new System.Drawing.Point(16, 11);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 38);
+            this.label6.Size = new System.Drawing.Size(197, 48);
             this.label6.TabIndex = 36;
             this.label6.Text = "CLIENTE";
             // 
@@ -76,9 +78,10 @@ namespace Sistema
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSalir.Location = new System.Drawing.Point(743, 380);
+            this.btnSalir.Location = new System.Drawing.Point(991, 468);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(126, 52);
+            this.btnSalir.Size = new System.Drawing.Size(168, 64);
             this.btnSalir.TabIndex = 35;
             this.btnSalir.Text = "ATRAS";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -87,9 +90,10 @@ namespace Sistema
             // bntEliminar
             // 
             this.bntEliminar.BackColor = System.Drawing.Color.Cyan;
-            this.bntEliminar.Location = new System.Drawing.Point(614, 381);
+            this.bntEliminar.Location = new System.Drawing.Point(819, 469);
+            this.bntEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bntEliminar.Name = "bntEliminar";
-            this.bntEliminar.Size = new System.Drawing.Size(123, 52);
+            this.bntEliminar.Size = new System.Drawing.Size(164, 64);
             this.bntEliminar.TabIndex = 34;
             this.bntEliminar.Text = "ELIMINAR";
             this.bntEliminar.UseVisualStyleBackColor = false;
@@ -98,9 +102,10 @@ namespace Sistema
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnModificar.Location = new System.Drawing.Point(614, 323);
+            this.btnModificar.Location = new System.Drawing.Point(819, 398);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(123, 52);
+            this.btnModificar.Size = new System.Drawing.Size(164, 64);
             this.btnModificar.TabIndex = 33;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -109,115 +114,125 @@ namespace Sistema
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(611, 291);
+            this.label5.Location = new System.Drawing.Point(815, 358);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(48, 16);
             this.label5.TabIndex = 32;
             this.label5.Text = "Correo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(611, 233);
+            this.label4.Location = new System.Drawing.Point(815, 287);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 31;
             this.label4.Text = "Direccion";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(611, 172);
+            this.label3.Location = new System.Drawing.Point(815, 212);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 30;
             this.label3.Text = "Telefono";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(611, 46);
+            this.label2.Location = new System.Drawing.Point(815, 57);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 13);
+            this.label2.Size = new System.Drawing.Size(20, 16);
             this.label2.TabIndex = 29;
             this.label2.Text = "ID";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(611, 104);
+            this.label1.Location = new System.Drawing.Point(815, 128);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 28;
             this.label1.Text = "Nombre";
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(691, 288);
+            this.txtCorreo.Location = new System.Drawing.Point(921, 354);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(177, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(235, 22);
             this.txtCorreo.TabIndex = 27;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(691, 101);
+            this.txtNombre.Location = new System.Drawing.Point(921, 124);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(177, 20);
+            this.txtNombre.Size = new System.Drawing.Size(235, 22);
             this.txtNombre.TabIndex = 26;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(691, 169);
+            this.txtTelefono.Location = new System.Drawing.Point(921, 208);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(177, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(235, 22);
             this.txtTelefono.TabIndex = 25;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(691, 230);
+            this.txtDireccion.Location = new System.Drawing.Point(921, 283);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(177, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(235, 22);
             this.txtDireccion.TabIndex = 24;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(691, 43);
+            this.txtId.Location = new System.Drawing.Point(921, 53);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(177, 20);
+            this.txtId.Size = new System.Drawing.Size(235, 22);
             this.txtId.TabIndex = 23;
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnGuardar.Location = new System.Drawing.Point(742, 323);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardar.Location = new System.Drawing.Point(989, 398);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(126, 52);
+            this.btnGuardar.Size = new System.Drawing.Size(168, 64);
             this.btnGuardar.TabIndex = 22;
-            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.Text = "AGREGAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 68);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 84);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(568, 365);
+            this.dataGridView1.Size = new System.Drawing.Size(757, 449);
             this.dataGridView1.TabIndex = 21;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // Cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 450);
+            this.ClientSize = new System.Drawing.Size(1193, 554);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSalir);
@@ -235,6 +250,7 @@ namespace Sistema
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cliente";
             this.Text = "Cliente";
             this.Load += new System.EventHandler(this.Cliente_Load);

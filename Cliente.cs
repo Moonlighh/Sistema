@@ -34,6 +34,7 @@ namespace Sistema
             txtDireccion.Text = "";
             txtCorreo.Text = "";
             txtTelefono.Text = "";
+            txtId.Enabled = true;
         }
 
 
