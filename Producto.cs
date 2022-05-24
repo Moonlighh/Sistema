@@ -16,15 +16,9 @@ namespace Sistema
         {
             InitializeComponent();
         }
-        static string servidor = "localhost";
-        static string bd = "ServicioTecnico";
-        static string usuario = "sa";
-        static string contraseña = "edson123147";
-        static string puerto = "1433";
 
+        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
 
-        // string cadenaConexion = "Data Source=" + servidor + "," + puerto + ";" + "user id=" + usuario + ";" + "password=" + contraseña + ";" + "Initial Catalog=" + bd + ";" + "Persist Security Info=true";
-        SqlConnection con = new SqlConnection("Data Source = " + servidor + ", " + puerto + ";" + "user id = " + usuario + ";" + "password=" + contraseña + ";" + "Initial Catalog = " + bd + ";" + "Persist Security Info=true");
         public void llenar_tabla()
         {
 
@@ -34,6 +28,17 @@ namespace Sistema
             adatador.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+        public void limpiarEntradas()
+        {
+            txtId.Text = "";
+            txtNombre.Text = "";
+            txtDescripcion.Text = "";
+            txtStock.Text = "";
+            txtPrecio.Text = "";
+        }
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             llenar_tabla();
@@ -48,6 +53,62 @@ namespace Sistema
         {
             //hola
             llenar_tabla();
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            llenar_tabla();
+        }
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string consulta = "insert into Producto values(" + txtId.Text + ",'" + txtNombre.Text + "','" + txtDescripcion.Text + "','" + txtStock.Text + "','" + txtPrecio.Text + "')";
+            SqlCommand comando = new SqlCommand(consulta, con);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro Agregado");
+            llenar_tabla();
+
+            con.Close();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string consulta = "insert into Producto values(" + txtId.Text + ",'" + txtNombre.Text + "','" + txtDescripcion.Text + "','" + txtStock.Text + "','" + txtPrecio.Text + "')";
+            SqlCommand comando = new SqlCommand(consulta, con);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro Agregado");
+            llenar_tabla();
+
+            con.Close();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string consulta = "delete from Producto where IdProducto=" + txtId.Text + "";
+            SqlCommand comando = new SqlCommand(consulta, con);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro Eliminado");
+            llenar_tabla();
+
+            con.Close();
+
+            limpiarEntradas();
+        }
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtId.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            txtNombre.Text = dataGridView1.SelectedCells[1].Value.ToString();
+            txtDescripcion.Text = dataGridView1.SelectedCells[2].Value.ToString();
+            txtStock.Text = dataGridView1.SelectedCells[3].Value.ToString();
+            txtPrecio.Text = dataGridView1.SelectedCells[4].Value.ToString();
+
+            txtId.Enabled = false;
         }
     }
 }
