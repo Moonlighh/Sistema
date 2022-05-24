@@ -60,7 +60,7 @@ namespace Sistema
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             con.Open();
-            habilitar();
+      
             string buscar = "select * from Vendedor where idVendedor='" + txtidVendedor.Text + "'";
             SqlCommand comando = new SqlCommand(buscar, con);
             SqlDataReader dr = comando.ExecuteReader();
@@ -107,7 +107,7 @@ namespace Sistema
         private void button1_Click_1(object sender, EventArgs e)
         {
             limpiarEntradas();
-            desHabilitar();
+           
         }
 
         private void Vendedor_Load(object sender, EventArgs e)

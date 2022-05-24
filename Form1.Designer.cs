@@ -45,8 +45,6 @@
             this.manteneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.almToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -167,8 +165,7 @@
             this.almacenToolStripMenuItem,
             this.tecnicoToolStripMenuItem,
             this.citasToolStripMenuItem,
-            this.piezasToolStripMenuItem,
-            this.almToolStripMenuItem});
+            this.piezasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -180,26 +177,11 @@
             // 
             this.pictureBox1.Image = global::Sistema.Properties.Resources.Fondo_Space_Gif__5_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 33);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(707, 290);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // almToolStripMenuItem
-            // 
-            this.almToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenedorToolStripMenuItem});
-            this.almToolStripMenuItem.Name = "almToolStripMenuItem";
-            this.almToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
-            this.almToolStripMenuItem.Text = "Alm";
-            // 
-            // mantenedorToolStripMenuItem
-            // 
-            this.mantenedorToolStripMenuItem.Name = "mantenedorToolStripMenuItem";
-            this.mantenedorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.mantenedorToolStripMenuItem.Text = "mantenedor";
-            this.mantenedorToolStripMenuItem.Click += new System.EventHandler(this.mantenedorToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -239,8 +221,6 @@
         private System.Windows.Forms.ToolStripMenuItem manteneToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem almToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mantenedorToolStripMenuItem;
     }
 }
 

@@ -38,6 +38,7 @@ namespace Sistema
             txtDistrito.Text = "";
             txtProvincia.Text = "";
             txtCod_postal.Text = "";
+            txtIdDireccion.Enabled = true;
 
         }
 
@@ -49,8 +50,11 @@ namespace Sistema
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Agregado");
             llenar_tabla();
-            limpiarEntradas();
+           
             con.Close();
+
+            limpiarEntradas();
+
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -81,13 +85,14 @@ namespace Sistema
         private void btnModificar_Click(object sender, EventArgs e)
         {
             con.Open();
-            string consulta = "update Almacen set IdDireccion='" + txtIdDireccion.Text + "',Dirección='" + txtDirección.Text + "',Distrito='" + txtDistrito.Text + "',Provincia=" + txtProvincia.Text + ",Codigo postal='" + txtCod_postal.Text + "' where IdDireccion='" + txtIdDireccion.Text + "'";
+            string consulta = "update Almacen set IdDireccion='" + txtIdDireccion.Text + "',Dirección='" + txtDirección.Text + "',Distrito='" + txtDistrito.Text + "',Provincia='" + txtProvincia.Text + "',Cod_postal='" + txtCod_postal.Text + "' where IdDireccion='" + txtIdDireccion.Text + "'";
             SqlCommand comando = new SqlCommand(consulta, con);
 
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Modificado");
             llenar_tabla();
             con.Close();
+            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -98,8 +103,9 @@ namespace Sistema
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Eliminado");
             llenar_tabla();
-
+            txtIdDireccion.Enabled = true;
             con.Close();
+            limpiarEntradas();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -120,6 +126,16 @@ namespace Sistema
         private void Almacen_Load(object sender, EventArgs e)
         {
             llenar_tabla();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIdDireccion.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            txtDirección.Text = dataGridView1.SelectedCells[1].Value.ToString();
+            txtDistrito.Text = dataGridView1.SelectedCells[2].Value.ToString();
+            txtProvincia.Text = dataGridView1.SelectedCells[3].Value.ToString();
+            txtCod_postal.Text = dataGridView1.SelectedCells[4].Value.ToString();
+            txtIdDireccion.Enabled = false;
         }
     }
 }
