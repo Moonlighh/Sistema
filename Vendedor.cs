@@ -18,8 +18,8 @@ namespace Sistema
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=Salinas;Password=JRsalinas98;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
- 
+        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -35,23 +35,6 @@ namespace Sistema
         }
 
 
-        public void habilitar()
-        {
-            btnAgregar.Enabled = false;
-            btnBuscar.Enabled = false;
-            btnModificar.Enabled = true;
-            btnEliminar.Enabled = true;
-
-        }
-
-        public void desHabilitar()
-        {
-            btnAgregar.Enabled = true;
-            btnBuscar.Enabled = true;
-            btnModificar.Enabled = false;
-            btnEliminar.Enabled = false;
-
-        }
         public void limpiarEntradas()
         {
             txtidVendedor.Text = "";
@@ -106,12 +89,13 @@ namespace Sistema
             MessageBox.Show("Registro Modificado");
             llenar_tabla();
             con.Close();
+            txtidVendedor.Enabled = true;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             con.Open();
-            string consulta = "delete from Vendedor where idTecnico='" + txtidVendedor.Text + "'";
+            string consulta = "delete from Vendedor where idVendedor='" + txtidVendedor.Text + "'";
             SqlCommand comando = new SqlCommand(consulta, con);
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro Eliminado");
@@ -124,6 +108,21 @@ namespace Sistema
         {
             limpiarEntradas();
             desHabilitar();
+        }
+
+        private void Vendedor_Load(object sender, EventArgs e)
+        {
+            llenar_tabla();
+        }
+
+        private void dgvVendedor_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtidVendedor.Text = dgvVendedor.SelectedCells[0].Value.ToString();
+            txtNombre_vendedor.Text = dgvVendedor.SelectedCells[1].Value.ToString();
+            txtDireccion_vendedor.Text = dgvVendedor.SelectedCells[2].Value.ToString();
+            txtTelefono_vendedor.Text = dgvVendedor.SelectedCells[3].Value.ToString();
+            txtEmail_vendedor.Text = dgvVendedor.SelectedCells[4].Value.ToString();
+            txtidVendedor.Enabled = false;
         }
     }
 

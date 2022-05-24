@@ -47,5 +47,28 @@ namespace Sistema
             Cliente pro = new Cliente();
             pro.ShowDialog();
         }
+
+        private void vendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mantenedorVendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Vendedor vend = new Vendedor();
+            vend.Show();
+        }
+
+        private void mantenedorAlmacenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Almacen alm = new Almacen();
+            alm.ShowDialog();
+        }
+
+        private void mantenedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Almacen alm = new Almacen();
+            alm.ShowDialog();
+        }
     }
 }

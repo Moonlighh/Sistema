@@ -247,6 +247,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Name = "Almacen";
             this.Text = "Almacen";
+            this.Load += new System.EventHandler(this.Almacen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.datos.ResumeLayout(false);
             this.datos.PerformLayout();

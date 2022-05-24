@@ -111,7 +111,7 @@
             // txtidVendedor
             // 
             this.txtidVendedor.Location = new System.Drawing.Point(353, 8);
-            this.txtidVendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtidVendedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtidVendedor.Name = "txtidVendedor";
             this.txtidVendedor.Size = new System.Drawing.Size(136, 27);
             this.txtidVendedor.TabIndex = 6;
@@ -119,7 +119,7 @@
             // txtNombre_vendedor
             // 
             this.txtNombre_vendedor.Location = new System.Drawing.Point(353, 52);
-            this.txtNombre_vendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre_vendedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre_vendedor.Name = "txtNombre_vendedor";
             this.txtNombre_vendedor.Size = new System.Drawing.Size(136, 27);
             this.txtNombre_vendedor.TabIndex = 7;
@@ -127,7 +127,7 @@
             // txtDireccion_vendedor
             // 
             this.txtDireccion_vendedor.Location = new System.Drawing.Point(353, 101);
-            this.txtDireccion_vendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccion_vendedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion_vendedor.Name = "txtDireccion_vendedor";
             this.txtDireccion_vendedor.Size = new System.Drawing.Size(136, 27);
             this.txtDireccion_vendedor.TabIndex = 8;
@@ -135,7 +135,7 @@
             // txtTelefono_vendedor
             // 
             this.txtTelefono_vendedor.Location = new System.Drawing.Point(353, 151);
-            this.txtTelefono_vendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono_vendedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono_vendedor.Name = "txtTelefono_vendedor";
             this.txtTelefono_vendedor.Size = new System.Drawing.Size(136, 27);
             this.txtTelefono_vendedor.TabIndex = 9;
@@ -143,7 +143,7 @@
             // txtEmail_vendedor
             // 
             this.txtEmail_vendedor.Location = new System.Drawing.Point(353, 204);
-            this.txtEmail_vendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail_vendedor.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail_vendedor.Name = "txtEmail_vendedor";
             this.txtEmail_vendedor.Size = new System.Drawing.Size(136, 27);
             this.txtEmail_vendedor.TabIndex = 10;
@@ -153,18 +153,21 @@
             this.dgvVendedor.BackgroundColor = System.Drawing.Color.Moccasin;
             this.dgvVendedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVendedor.Location = new System.Drawing.Point(40, 270);
-            this.dgvVendedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvVendedor.Margin = new System.Windows.Forms.Padding(4);
             this.dgvVendedor.Name = "dgvVendedor";
+            this.dgvVendedor.ReadOnly = true;
             this.dgvVendedor.RowHeadersWidth = 51;
             this.dgvVendedor.RowTemplate.Height = 24;
+            this.dgvVendedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVendedor.Size = new System.Drawing.Size(668, 256);
             this.dgvVendedor.TabIndex = 11;
+            this.dgvVendedor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVendedor_CellDoubleClick);
             // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAgregar.Location = new System.Drawing.Point(804, 15);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(103, 29);
             this.btnAgregar.TabIndex = 12;
@@ -176,7 +179,7 @@
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnBuscar.Location = new System.Drawing.Point(804, 72);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(103, 29);
             this.btnBuscar.TabIndex = 13;
@@ -188,7 +191,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnModificar.Location = new System.Drawing.Point(804, 131);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(103, 29);
             this.btnModificar.TabIndex = 14;
@@ -200,7 +203,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnEliminar.Location = new System.Drawing.Point(804, 189);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 29);
             this.btnEliminar.TabIndex = 15;
@@ -212,7 +215,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button1.Location = new System.Drawing.Point(804, 254);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 29);
             this.button1.TabIndex = 16;
@@ -243,9 +246,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Vendedor";
             this.Text = "Vendedor";
+            this.Load += new System.EventHandler(this.Vendedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

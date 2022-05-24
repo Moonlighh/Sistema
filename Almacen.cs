@@ -18,7 +18,7 @@ namespace Sistema
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=Salinas;Password=JRsalinas98;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
+        SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
 
         public void llenar_tabla()
         {
@@ -31,23 +31,6 @@ namespace Sistema
         }
 
 
-        public void habilitar()
-        {
-            btnAgregar.Enabled = false;
-            btnBuscar.Enabled = false;
-            btnModificar.Enabled = true;
-            btnEliminar.Enabled = true;
-
-        }
-
-        public void desHabilitar()
-        {
-            btnAgregar.Enabled = true;
-            btnBuscar.Enabled = true;
-            btnModificar.Enabled = false;
-            btnEliminar.Enabled = false;
-
-        }
         public void limpiarEntradas()
         {
             txtIdDireccion.Text = "";
@@ -72,13 +55,13 @@ namespace Sistema
         private void button5_Click(object sender, EventArgs e)
         {
             limpiarEntradas();
-            desHabilitar();
+           
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             con.Open();
-            habilitar();
+            
             string buscar = "select * from Almacen where IdDireccion='" + txtIdDireccion.Text + "'";
             SqlCommand comando = new SqlCommand(buscar, con);
             SqlDataReader dr = comando.ExecuteReader();
@@ -132,6 +115,11 @@ namespace Sistema
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Almacen_Load(object sender, EventArgs e)
+        {
+            llenar_tabla();
         }
     }
 }
