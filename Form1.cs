@@ -70,5 +70,12 @@ namespace Sistema
             Almacen alm = new Almacen();
             alm.ShowDialog();
         }
+
+        private void mantenedorCitasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Citas ci = new Citas();
+            ci.ShowDialog();
+
+        }
     }
 }
