@@ -18,10 +18,12 @@ namespace Sistema
         {
             InitializeComponent();
         }
-        string conexion = "Data Source=DESKTOP-RSFCT1G\\SQLEXPRESS;Initial Catalog=ServicioTecnico; Integrated Security=True";
+         SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
+
+       // string conexion = "Data Source=DESKTOP-RSFCT1G\\SQLEXPRESS;Initial Catalog=ServicioTecnico; Integrated Security=True";
         public void llenar_tabla()
         {
-            SqlConnection con = new SqlConnection(conexion);
+          //  SqlConnection con = new SqlConnection(conexion);
             string consulta = "select * from Citas";
             SqlDataAdapter adatador = new SqlDataAdapter(consulta, con);
             DataTable dt = new DataTable();
@@ -31,7 +33,7 @@ namespace Sistema
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(conexion);
+           // SqlConnection con = new SqlConnection(conexion);
             con.Open();
             String consulta = "insert into Citas values('" + txtNumCita.Text + "', '" + txtHoraCita.Text + "', '" + txtFechaCita.Text + "');";
             SqlCommand comando = new SqlCommand(consulta, con);
@@ -74,7 +76,7 @@ namespace Sistema
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(conexion);
+           // SqlConnection con = new SqlConnection(conexion);
             con.Open();
             string consulta = "delete from citas where numeroDeCita='" + txtNumCita.Text + "'";
             SqlCommand comando = new SqlCommand(consulta, con);
@@ -89,7 +91,7 @@ namespace Sistema
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(conexion);
+           // SqlConnection con = new SqlConnection(conexion);
             con.Open();
             string consulta = "update Citas set numeroDeCita = '" + txtNumCita.Text + "', hora = '" + txtHoraCita.Text + "', fecha = '" + txtFechaCita.Text + "';";
             SqlCommand comando = new SqlCommand(consulta, con);
