@@ -16,6 +16,10 @@ namespace Sistema
         {
             InitializeComponent();
         }
+        
+        
+        //PALMA CRUZ JOSEPH
+        
         SqlConnection con = new SqlConnection("Server=tcp:basedatossrver.database.windows.net,1433;Initial Catalog=ServicioTecnico;Persist Security Info=False;User ID=joseph;Password=Joandle123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
 
 
